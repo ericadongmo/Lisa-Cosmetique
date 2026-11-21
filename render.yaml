@@ -1,0 +1,37 @@
+# Blueprint Render : backend Spring Boot de Lisa Cosmétique.
+# Render > New > Blueprint > choisir ce dépôt. Les valeurs « sync: false » sont
+# demandées à la création (jamais stockées dans Git).
+services:
+  - type: web
+    name: lisa-api
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    region: frankfurt
+    plan: free
+    healthCheckPath: /actuator/health
+    autoDeploy: true
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      - key: SWAGGER_ENABLED
+        value: "false"
+      - key: DB_POOL_SIZE
+        value: "5"
+      - key: SUPABASE_STORAGE_BUCKET
+        value: lisa-cosmetique
+      - key: SUPABASE_SIGNED_URL_TTL
+        value: 15m
+      # Adresse(s) du site Vercel, séparées par des virgules (à compléter après le déploiement Vercel)
+      - key: CORS_ALLOWED_ORIGINS
+        sync: false
+      - key: DB_URL
+        sync: false
+      - key: DB_USERNAME
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SECRET_KEY
+        sync: false
