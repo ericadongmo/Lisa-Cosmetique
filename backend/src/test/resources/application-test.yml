@@ -1,0 +1,27 @@
+# Valeurs factices réservées aux tests : aucun service externe n'est contacté.
+#
+# ATTENTION : les tests JPA utilisent H2 avec le schéma généré par Hibernate
+# (ddl-auto: create-drop) et Flyway désactivé. Les migrations PostgreSQL
+# (RLS, jsonb, index partiels, CHECK) ne sont donc PAS exercées ici.
+spring:
+  datasource:
+    url: jdbc:h2:mem:lisa;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: false
+  flyway:
+    enabled: false
+
+app:
+  cors:
+    allowed-origins: http://localhost:3000
+  storage:
+    supabase:
+      url: http://localhost:59999
+      secret-key: test-secret-key
+      bucket: test-bucket
+      signed-url-ttl: 5m

@@ -1,0 +1,110 @@
+{
+  "_commentaire": "Jeu de données de test. Tous les clients commencent par « TEST » pour être retrouvés (et annulés) facilement dans /admin/commandes.",
+  "clients": [
+    {
+      "cle": "awa-yaounde",
+      "customerName": "TEST Awa Mballa",
+      "customerPhone": "+237 6 90 11 22 01",
+      "customerEmail": "awa.test@example.com",
+      "zone": "Yaoundé centre",
+      "deliveryAddress": {
+        "recipientName": "TEST Awa Mballa",
+        "phoneNumber": "+237 6 90 11 22 01",
+        "city": "Yaoundé",
+        "neighborhood": "Bastos",
+        "streetAddress": "Rue 1.750, immeuble bleu, 2e étage",
+        "additionalInformation": "Appeler avant de monter"
+      },
+      "panier": [
+        { "slug": "lait-corporel-nourrissant", "quantite": 2 },
+        { "slug": "beurre-karite-brut", "quantite": 1 }
+      ],
+      "notes": "Livraison de préférence le matin"
+    },
+    {
+      "cle": "jean-douala",
+      "customerName": "TEST Jean-Paul Ekotto",
+      "customerPhone": "690112202",
+      "customerEmail": null,
+      "zone": "Douala",
+      "deliveryAddress": {
+        "recipientName": "TEST Jean-Paul Ekotto",
+        "phoneNumber": "690112202",
+        "city": "Douala",
+        "neighborhood": "Bonapriso",
+        "streetAddress": "Avenue de Gaulle, face pharmacie du Centre",
+        "additionalInformation": null
+      },
+      "panier": [
+        { "slug": "meches-naturelles-3-bundles", "quantite": 1 },
+        { "slug": "closure-frontal-13x4", "quantite": 1 }
+      ],
+      "notes": null
+    },
+    {
+      "cle": "nadege-bafoussam",
+      "customerName": "TEST Nadège Fotso",
+      "customerPhone": "00237 677 11 22 03",
+      "customerEmail": "nadege.test@example.com",
+      "zone": "Autres villes",
+      "deliveryAddress": {
+        "recipientName": "TEST Nadège Fotso",
+        "phoneNumber": "677112203",
+        "city": "Bafoussam",
+        "neighborhood": "Tamdja",
+        "streetAddress": "Carrefour Total, deuxième portail à gauche",
+        "additionalInformation": "Récupération en agence de voyage possible"
+      },
+      "panier": [
+        { "slug": "serum-eclat-vitamine-c", "quantite": 1 },
+        { "slug": "creme-hydratante-karite", "quantite": 1 },
+        { "slug": "set-12-pinceaux", "quantite": 1 }
+      ],
+      "notes": "Cadeau, ne pas mettre le prix dans le colis"
+    },
+    {
+      "cle": "parcours-complet",
+      "customerName": "TEST Mireille Ngo Bassa",
+      "customerPhone": "+237 699 11 22 04",
+      "customerEmail": "mireille.test@example.com",
+      "zone": "Yaoundé centre",
+      "deliveryAddress": {
+        "recipientName": "TEST Mireille Ngo Bassa",
+        "phoneNumber": "+237 699 11 22 04",
+        "city": "Yaoundé",
+        "neighborhood": "Mvog-Mbi",
+        "streetAddress": "Derrière le marché, maison jaune",
+        "additionalInformation": null
+      },
+      "panier": [
+        { "slug": "eponge-maquillage", "quantite": 1 }
+      ],
+      "notes": "Commande utilisée pour le parcours CONFIRMED → PROCESSING → SHIPPED → DELIVERED"
+    },
+    {
+      "cle": "annulation",
+      "customerName": "TEST Rodrigue Atangana",
+      "customerPhone": "655112205",
+      "customerEmail": "rodrigue.test@example.com",
+      "zone": "Douala",
+      "deliveryAddress": {
+        "recipientName": "TEST Rodrigue Atangana",
+        "phoneNumber": "655112205",
+        "city": "Douala",
+        "neighborhood": "Akwa",
+        "streetAddress": "Boulevard de la Liberté, immeuble Kassap",
+        "additionalInformation": null
+      },
+      "panier": [
+        { "slug": "shampoing-hydratant", "quantite": 3 },
+        { "slug": "huile-ricin-pure", "quantite": 2 }
+      ],
+      "notes": "Commande utilisée pour vérifier l'annulation et la restitution du stock"
+    }
+  ],
+  "recherches": [
+    { "q": "karité", "attendu": ["beurre-karite-brut", "creme-hydratante-karite"] },
+    { "q": "perruque", "attendu": ["perruque-lisse-naturelle", "perruque-bouclee"] },
+    { "q": "zzz-introuvable", "attendu": [] }
+  ]
+}

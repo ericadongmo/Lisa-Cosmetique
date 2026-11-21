@@ -1,0 +1,44 @@
+[
+  {
+    "client": "TEST Awa Mballa",
+    "numero": "LC-20261120-KGJDT7",
+    "telephone": "+237 6 90 11 22 01",
+    "totalXaf": 20500,
+    "id": "ee9c1259-14f1-412f-905b-92002711d584"
+  },
+  {
+    "client": "TEST Jean-Paul Ekotto",
+    "numero": "LC-20261120-M35FS2",
+    "telephone": "690112202",
+    "totalXaf": 113000,
+    "id": "56a00176-4130-48cb-9b04-7449832efde9"
+  },
+  {
+    "client": "TEST Nadège Fotso",
+    "numero": "LC-20261120-CWR7T6",
+    "telephone": "00237 677 11 22 03",
+    "totalXaf": 39500,
+    "id": "97326394-0a2e-4197-875d-9aa3d217b69e"
+  },
+  {
+    "client": "TEST Mireille Ngo Bassa",
+    "numero": "LC-20261120-DZNVFA",
+    "telephone": "+237 699 11 22 04",
+    "totalXaf": 4000,
+    "id": "0a8ea3d7-d491-4d50-8a95-0fdd72962184"
+  },
+  {
+    "client": "TEST Rodrigue Atangana",
+    "numero": "LC-20261120-J8W4WW",
+    "telephone": "655112205",
+    "totalXaf": 23500,
+    "id": "92707229-f878-46f4-8e6c-6edf82e98642"
+  },
+  {
+    "client": "TEST Awa Mballa",
+    "numero": "LC-20261120-98BAXQ",
+    "telephone": "+237 6 90 11 22 01",
+    "totalXaf": 6500,
+    "id": "1b3b3f9a-2dfc-49c3-b08f-0a89448e8101"
+  }
+]

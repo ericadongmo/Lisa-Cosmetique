@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Identité « Noir, Rose & Or » — Lisa Cosmétique et Bien-être */
+@theme {
+  /* Noirs : structure, texte, en-tête et pied de page */
+  --color-noir: #111111;
+  --color-noir-soft: #3d393b;
+
+  /* Roses : accents, prix, actions, badges */
+  --color-rose: #d6006f;
+  --color-rose-deep: #a8005a;
+  --color-rose-light: #ff5fa8;
+  --color-blush: #f9cfe2;
+  --color-blush-soft: #fdf0f6;
+
+  /* Or : touche de prestige (filets, logo, détails) */
+  --color-gold: #c9a24b;
+  --color-gold-light: #e2c77d;
+  --color-gold-deep: #86681f;
+
+  /* Fonds */
+  --color-blanc: #ffffff;
+  --color-white: #ffffff;
+
+  --font-display: var(--font-montserrat), system-ui, sans-serif;
+  --font-sans: var(--font-poppins), system-ui, sans-serif;
+}
+
+body {
+  background: var(--color-blanc);
+  color: var(--color-noir);
+}
+
+::selection {
+  background: var(--color-rose);
+  color: var(--color-blanc);
+}
