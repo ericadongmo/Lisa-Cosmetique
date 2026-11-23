@@ -21,7 +21,7 @@ export function AddToCartButton({
 
   useEffect(() => {
     if (!isSuccess) return;
-    const timer = window.setTimeout(reset, 2000);
+    const timer = window.setTimeout(reset, 2);
     return () => window.clearTimeout(timer);
   }, [isSuccess, reset]);
 
